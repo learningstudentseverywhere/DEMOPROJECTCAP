@@ -1,0 +1,2 @@
+###
+GET http://localhost:4004/odata/v4/student/FetchStudentInformation(student_id='1002')

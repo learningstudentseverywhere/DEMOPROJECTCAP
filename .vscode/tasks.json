@@ -26,6 +26,24 @@
         "--in-memory?"
       ],
       "problemMatcher": []
+    },
+    {
+      "label": "cds-deploy-to-hana-DEMOPROJECTCAP-DEMOPROJECTCAP-db",
+      "type": "shell",
+      "command": "cds",
+      "args": [
+        "deploy",
+        "--to",
+        "hana:DEMOPROJECTCAP-db",
+        "--no-save"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "isBackground": true,
+      "problemMatcher": [
+        "$cap-hdi-bind-handler"
+      ]
     }
   ]
 }
