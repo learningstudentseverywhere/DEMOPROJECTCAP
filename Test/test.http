@@ -1,2 +1,23 @@
 ###
 GET http://localhost:4004/odata/v4/student/FetchStudentInformation(student_id='1002')
+
+
+###
+POST http://localhost:4004/odata/v4/student/FetchStudentInformationAction
+Content-Type : application/json
+
+{
+    "student_id":"1002"
+}
+
+
+###
+POST http://localhost:4004/odata/v4/student/FetchStudentInformationActionOne
+Content-Type : application/json
+
+{
+    "Input":{
+        "student_id":"1002",
+        "student_name":"sakthivel"
+    }
+}
